@@ -1,0 +1,602 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+li a button{
+
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;}
+
+.logo-atl{
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  transition: .3s;
+
+}
+
+.logo-atl:hover{
+  transform: scale(1.2);
+
+}
+  .main-menu{
+    position: fixed;
+
+    width: 100%;
+    height: 12%;;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    justify-content: space-between;
+    background-color: rgba(23, 13, 74, 0.53);
+
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+.nav_links{
+  list-style: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+  .nav_links a{
+    display: inline-block;
+    padding: 6px 20px;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+  }
+
+
+
+
+.li-main-menu:hover{
+  transform: scale(1.15);
+  /* border: 1px solid rgba(250, 250, 250, 0.48);
+  border-radius: 15%;
+  background-color: rgba(255, 255, 255, 0.33); */
+
+}
+
+.facebook, .youtube, .whatsapp{
+  background-position: center;
+  cursor: pointer;
+  transition: .3s;
+
+}
+
+.facebook:hover, .youtube:hover, .whatsapp:hover{
+  transform: scale(1.5);
+  background-color: rgba(255, 255, 255, 0.59);
+  border-radius: 45px;
+}
+
+a{
+  display: inline-block;
+  color: white;
+  padding-right: 10px;
+
+}
+
+header{
+  width: 100%;
+  height: 650px;
+  background-image: url(img88.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow:hidden;
+  color: rgba(24, 26, 26, 0.63);
+  text-align: center;
+}
+
+.textos-inicio{
+  margin-top: 152px;
+}
+
+.header-titulo{
+  font-size: 85px;
+  color: rgba(228, 231, 231, 0.67);
+}
+
+.header-sub-titulo{
+  font-size: 42px;
+  font-weight: 300;
+  margin-bottom: 32px;
+  color: rgba(228, 231, 231, 0.67);
+}
+
+.botton{
+  display: inline-block;
+  padding: 6px;
+  width: 128px;
+  border: 2px solid rgba(228, 231, 231, 0.67);
+  color: rgba(228, 231, 231, 0.67);
+  font-size: 19px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 16px; /*ESTE ES EL REDONDEADO DE LA CAJA*/
+  margin-top: 24px;
+  font-weight: 300;
+}
+
+.sesgo_abajo_header{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 35vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.sesgo_arriba_header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 35vh 100vw 0 0 ;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent ;
+}
+
+
+.contenedor{
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 52px 0px;
+  margin-top: 40px;
+}
+
+.sobre-nosotros{
+  text-align: center;
+  font-size: 65px;  /*tamaño de fuente*/
+  margin-bottom: 13px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.46);
+
+}
+
+.sobre-nosotros_botton{
+  display: inline-block;
+  padding: 6px;
+  width: 128px;
+  border: 2px solid rgba(15, 0, 71, 0.38);
+  color: rgba(0, 0, 0, 0.46);
+  font-size: 19px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 16px; /*ESTE ES EL REDONDEADO DE LA CAJA*/
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.slogan{
+  font-size: 24px;  /*TAMAÑÑO DE LA FUENTE*/
+  text-align: center;
+  font-weight: 300px;
+  margin-bottom: 15px; /*separacion del slogan hacia el parrafo de abajo es de 10px*/
+  color: rgba(0, 0, 0, 0.46);
+
+}
+
+.parrafo{
+  margin-bottom: 13px; /*SEPARCION HACIA ABAJO DE UN TEXTO A OTRO*/
+  font-weight: 300; /*Es el grosor de la letra como por ejemplo NEGRITAS*/
+  text-align: justify;
+  line-height: 24px;
+  color: rgb(24, 26, 26);
+}
+
+.Galeria{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  /* ESTE ES EL SECRETO PARA QUE LAS IMAGENES SE PONGAN JUNTAS EN ORDEN HORIZONTTAL */
+
+
+}
+
+.imagenes{
+  width: 20%;
+  height: 500px;
+  overflow: hidden;
+  transition: .3s;
+/*  position: absolute;*/
+}
+
+.imagenes img:hover{
+  transform: 1.2;
+
+}
+
+.imagenes img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*mejora la calidad de las imagenes cuanto se agrupan*/
+
+}
+
+.cards{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card{
+  margin: 20px 0;
+  width: 30%;
+  height: 250px;
+  text-align: center;
+  font-size: 19px;                            /*TAMAÑO DEL TEXTO DE LAS TARJETAS*/
+  padding: 20px;
+  box-shadow: 0px 0px 4px 0 rgba(0, 7, 51, 0.62);
+  background-color: rgba(34, 41, 48, 0.18); /*COLOR DE FONDO DE LAS TARJETAS*/
+  border-radius: 10%;                       /*REDONDEO DE LA TARJETA*/
+}
+
+/* vamos a definir el tamaño de las imagenes de las cards*/
+
+.card img{
+width: 140px;
+height: 140px;
+object-fit: cover;
+border-radius: 100%;   /*ESTAMOS DECLARANDO QUE EL REDONDEO DE LA IAMGEN SEA EL 100%*/
+}
+
+/* NUESTROS CLIENTES */
+/*
+.nuestros-clientes_fondo{
+  height: : 100%;
+  height: 650px;
+  background-image: url(img8.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow:hidden;
+  color: rgba(4, 205, 205, 0.8);
+  text-align: center;
+}
+
+.cliente_ img{
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 15%;   /*ESTAMOS DECLARANDO QUE EL REDONDEO DE LA IAMGEN SEA EL 100%*/
+  }
+}
+
+/* .sesgo-abajo-unico{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 35vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent rgba(#06002a, 0.67) transparent;
+} */
+
+/* .titulo-patrocinadores, .subtitulo-patrocinadores{
+  color:rgba(0, 0, 0, 0.46);
+  text-align: center;
+}
+
+.titulo-patrocinadores{
+  font-size: 56px;
+  margin-top: 48px;
+}
+
+.subtitulo-patrocinadores{
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+.clientes{
+display: flex;      /* alinea las imagenes en linea horizontal*/
+/* flex-wrap: wrap;
+margin-bottom: 64px;
+width: 100%;
+justify-content: space-between;     /*IMAGENES JUSTIFICADAS CON UNA SEPARACION ENTRE MEDIO*/
+
+/* }  */
+
+/* NUESTRAS MARCAS */
+
+.nuestras_marcas{
+  height: : 100%;
+  height: 650px;
+  color: rgba(4, 205, 205, 0.8);
+  text-align: center;
+  background-color: black;
+}
+
+/* el object fi-cover es para que la imagen se ajuste a ls medidas */
+
+.marca_img{
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 0%;   /* NOTE: ESTAMOS DECLARANDO QUE EL REDONDEO DE LA IAMGEN SEA EL 100%*/
+  }
+}
+
+/* .sesgo-abajo-unico{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 35vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent rgba(#06002a, 0.67) transparent;
+} */
+
+.titulo-patrocinadores, .subtitulo-patrocinadores{
+  color:rgba(0, 0, 0, 0.46);
+  text-align: center;
+}
+
+.titulo-patrocinadores{
+  font-size: 56px;
+  margin-top: 48px;
+}
+
+.subtitulo-patrocinadores{
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+.marcas{
+display: flex;      /* alinea las imagenes en linea horizontal*/
+flex-wrap: wrap;
+margin-bottom: 40px;
+width: 100%;
+justify-content: space-between;     /*IMAGENES JUSTIFICADAS CON UNA SEPARACION ENTRE MEDIO*/
+
+}
+
+
+/* FOOTER */
+
+
+
+footer{
+  background-color: rgba(79, 79, 79, 0.44);      /*color de fondo de la seccion de footer*/
+  height: auto;
+}
+
+.titulo-footer, .subtitulo-footer{          /*APLICAMOS LOS DOS FORMATOS A ESTAS DOS CLASES*/
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+}
+
+.titulo-footer{
+  font-size: 56px;
+  font-weight: 300;
+  margin-bottom: 15px;
+
+}
+
+.subtitulo-footer{
+  font-size: 16 px;
+  font-weight: 400;
+  margin-bottom: 64px;
+
+}
+
+form{
+  display: flex;
+  width: 100%;
+  justify-content:space-between; /*SEPARACION ENTRE CADA UNO DE LOS ELEMENTOS*/
+  flex-wrap: wrap;
+  margin: auto;
+
+}
+
+input[type="text"], input[type="email"]{
+  display: inline-block;
+  width: 48%;
+  padding: 13px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: "open sans";
+  background-color: rgba(37, 37, 34, 0.7);
+  margin-bottom: 16px;
+  border-top: rgba(37, 37, 34, 0.7);
+}
+
+/*ESTA ACCION SE TOMA CUANDO PONEMOS EL CURSOR DENTRO DEL RECUADRO*/
+input[type="text"]:focus, input[type="email"]:focus{
+  border-top: 5px solid rgba(255, 255, 255, 1);
+
+}
+
+
+
+textarea{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 200px;
+  min-height: 200px;
+  padding: 13px;
+
+  border: none;            /*SON LOS MISMOS VALORES QUE LOS INPU*/
+  color: rgb(255, 255, 255);
+  font-family: "open sans";
+  background-color: rgba(37, 37, 34, 0.7);
+  margin-bottom: 16px;
+
+}
+
+textarea:focus{
+  border-top: 5px solid rgba(255, 255, 255, 1);
+}
+
+input[type="submit"]{
+  display: inline-block;
+  padding: 13px;
+  border: none;            /*SON LOS MISMOS VALORES QUE LOS INPU*/
+  color:inherit;
+  font-family: "open sans";
+  color: rgba(247, 247, 247, 0.51);
+  background-color: rgba(37, 37, 34, 0.7);
+  width: 96px;
+
+}
+input[type="submit"]:focus{
+  border: 5px solid rgba(255, 255, 255, 1);
+}
+
+
+
+/* NOTE: BLOG */
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  /* NOTE: border-bpx, junta los elementos, no hay ni margin ni pading */
+}
+
+
+.post-list{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* NOTE: Alinea las 4 publicaciones al centro, son 4 publicaciones de 1 fracion */
+  grid-gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.post-img{
+  background-image: url(dureza.jpg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: .2s; /* NOTE: Esta trnasition es para cuando agreguemos el hover */
+}
+
+.post-img-2{
+  background-image: url(resina.jpg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: .2s; /* NOTE: Esta trnasition es para cuando agreguemos el hover */
+}
+
+.post-img-3{
+  background-image: url(carbon.jpg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: .2s; /* NOTE: Esta trnasition es para cuando agreguemos el hover */
+}
+
+.post{
+  box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.56); /* NOTE: Colorea una caja difuniada */
+  overflow: hidden;
+  transition: .2s;
+}
+
+.post:hover{
+  transform: translateY(-4px); /* NOTE: El movimiento es hacia y hacia arriba */
+  box-shadow: 0 1px 14px 1px rgba(0, 0, 0, 0.63);
+}
+
+.post-header{
+  width: 100%;
+  height: 500px;
+  overflow: hidden; /* NOTE: La imagen no se salga de su cuadro */
+  cursor: pointer; /* NOTE: Es para que se ponga la mainita cuando el cursos este sobre la imagen */
+}
+
+.post:hover .post-img,
+.post:hover .post-img-2,
+.post:hover .post-img-3{
+  transform: scale(1.1);
+}
+
+.post-body{
+  padding: 10px;
+  text-align: center;
+}
+
+.post-body span{
+  display: inline-block;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.post-body h2{
+  margin-bottom: 15PX;
+}
+
+.post-body p{
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.post-body .post-link{
+  display: block;
+  text-decoration: none;  /* NOTE: Evitamos el subryado */
+  padding: 10px;
+  background-color: rgb(37, 32, 250);
+  color: white;
+  margin: auto; /* NOTE: para que se ponga en el cntro */
+  border-radius: 20px;
+  box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.15);
+  transition: .2;
+}
+
+.post-body .post-link:hover{
+  background-color:  rgb(4, 0, 180);
+  box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+
+/* NOTE: RESPONSIVE */
+@media (max-width: 840px){
+  .content{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px){
+  .content{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

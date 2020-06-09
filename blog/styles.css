@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  /* NOTE: border-bpx, junta los elementos, no hay ni margin ni pading */
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.post-list{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* NOTE: Alinea las 4 publicaciones al centro, son 4 publicaciones de 1 fracion */
+  grid-gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.post-img{
+  background-image: url(dureza.jpg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: .2s; /* NOTE: Esta trnasition es para cuando agreguemos el hover */
+}
+
+.post-img-2{
+  background-image: url(resina.jpg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: .2s; /* NOTE: Esta trnasition es para cuando agreguemos el hover */
+}
+
+.post-img-3{
+  background-image: url(carbon.jpg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: .2s; /* NOTE: Esta trnasition es para cuando agreguemos el hover */
+}
+
+.post{
+  box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.56); /* NOTE: Colorea una caja difuniada */
+  overflow: hidden;
+  transition: .2s;
+}
+
+.post:hover{
+  transform: translateY(-4px); /* NOTE: El movimiento es hacia y hacia arriba */
+  box-shadow: 0 1px 14px 1px rgba(0, 0, 0, 0.63);
+}
+
+.post-header{
+  width: 100%;
+  height: 500px;
+  overflow: hidden; /* NOTE: La imagen no se salga de su cuadro */
+  cursor: pointer; /* NOTE: Es para que se ponga la mainita cuando el cursos este sobre la imagen */
+}
+
+.post:hover .post-img,
+.post:hover .post-img-2,
+.post:hover .post-img-3{
+  transform: scale(1.1);
+}
+
+.post-body{
+  padding: 10px;
+  text-align: center;
+}
+
+.post-body span{
+  display: inline-block;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.post-body h2{
+  margin-bottom: 15PX;
+}
+
+.post-body p{
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.post-body .post-link{
+  display: block;
+  text-decoration: none;  /* NOTE: Evitamos el subryado */
+  padding: 10px;
+  background-color: rgb(37, 32, 250);
+  color: white;
+  margin: auto; /* NOTE: para que se ponga en el cntro */
+  border-radius: 20px;
+  box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.15);
+  transition: .2;
+}
+
+.post-body .post-link:hover{
+  background-color:  rgb(4, 0, 180);
+  box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+
+/* NOTE: RESPONSIVE */
+@media (max-width: 840px){
+  .content{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px){
+  .content{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
