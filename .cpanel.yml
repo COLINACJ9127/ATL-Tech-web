@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/ntji7en84956/repositorio1 
+    - /bin/cp  $DEPLOYPATH
