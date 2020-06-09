@@ -17,6 +17,16 @@ li a button{
   color: white;
   text-decoration: none;}
 
+.nuestros-servicios_link{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 13px; /*SEPARCION HACIA ABAJO DE UN TEXTO A OTRO*/
+  font-weight: 300; /*Es el grosor de la letra como por ejemplo NEGRITAS*/
+  line-height: 24px;
+  color: rgb(24, 26, 26);
+
+}
+
 .logo-atl{
   width: 70px;
   height: 70px;
@@ -132,24 +142,6 @@ header{
   border-radius: 16px; /*ESTE ES EL REDONDEADO DE LA CAJA*/
   margin-top: 24px;
   font-weight: 300;
-}
-
-.sesgo_abajo_header{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-width: 0 0 35vh 100vw;
-  border-style: solid;
-  border-color: transparent transparent #fff transparent;
-}
-
-.sesgo_arriba_header{
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-width: 35vh 100vw 0 0 ;
-  border-style: solid;
-  border-color: #fff transparent transparent transparent ;
 }
 
 
