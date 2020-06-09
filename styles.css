@@ -27,6 +27,9 @@ li a button{
 
 }
 
+
+/* BARRA SUPERIOR DE MENU */
+
 .logo-atl{
   width: 70px;
   height: 70px;
@@ -39,22 +42,26 @@ li a button{
   transform: scale(1.2);
 
 }
-  .main-menu{
-    position: fixed;
+.main-menu{
+  position: fixed;
 
-    width: 100%;
-    height: 12%;;
+  width: 100%;
+  height: 12%;;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 10px;
-    justify-content: space-between;
-    background-color: rgba(23, 13, 74, 0.53);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  justify-content: space-between;
+  background-color: rgba(23, 13, 74, 0.53);
 
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-  }
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+
+
+
 .nav_links{
   list-style: none;
   color: white;
@@ -69,8 +76,6 @@ li a button{
     transition: .3s;
     text-decoration: none;
   }
-
-
 
 
 .li-main-menu:hover{
@@ -94,6 +99,36 @@ li a button{
   border-radius: 45px;
 }
 
+
+
+
+                                            /* REDES SOCIALES BARRA LATERAL */
+
+.sociales-lateral{
+  position: fixed;
+  background-color:  rgba(23, 13, 74, 0.53);
+  background-position: right;
+  height: 22%;
+  width: 4%;
+  margin-top: 250px;
+  margin-left: 96%;
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 45%;
+  transition: .3s;
+}
+
+
+.redes-sociales_barra{
+  display: block;
+  margin-top: 55%;
+
+}
+
+.facebook_br, .youtube_br, .whatsapp_br{
+  margin-top: 50px;
+  border: 1px solid red;
+}
+/*  */
 a{
   display: inline-block;
   color: white;
